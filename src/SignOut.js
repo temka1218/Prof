@@ -7,7 +7,7 @@ const Home1 = () => {
     <>
       <button onClick={() => app.auth().signOut()}>Sign out</button>
       {app.auth().signOut()}
-      {/* <Redirect to="/" />; */}
+      {/* <Redirectto="/" />; */}
     </>
   );
 };
