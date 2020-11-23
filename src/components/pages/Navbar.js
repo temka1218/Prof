@@ -67,6 +67,17 @@ function Navbar() {
                 </Link>
             )}
             </li>
+            <li className='nav-btn'>
+                {button ? (
+                    <Link to='/signout' className='btn-link'>
+                        <Button buttonStyle='btn--outline'>Гарах</Button>
+                    </Link>
+                ):(
+                <Link to='/signout' className='btn-link'>
+                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Гарах</Button>
+                </Link>
+            )}
+            </li>
             </ul>
             </div> 
         </div>

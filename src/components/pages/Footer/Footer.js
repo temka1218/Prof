@@ -29,6 +29,7 @@ function Footer() {
           <div className='footer-link-items'>
             <h2>Холбоо барих</h2>
             <Link to='/'>+976 99153628</Link>
+            <Link to='/'>+976 80094482</Link>
             <Link to='/'>Мандах их сургууль, Мэдээлэл технологийн сургууль</Link>
           </div>
         </div>

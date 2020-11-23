@@ -40,19 +40,41 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+// this.state = {
+//     password: '',
+//     confirmPassword: ''
+// }
+
+
+// handleSubmit = () => {
+//     const { password, confirmPassword } = this.state;
+//     // perform all neccassary validations
+//     if (password !== confirmPassword) {
+//         alert("Passwords don't match");
+//     } else {
+//         // make API call
+//     }
+// }
+
 const SignUp = ({ history }) => {
     const classes = useStyles();
     const handleSignUp = useCallback(async event => {
         event.preventDefault();
-        const { email, password } = event.target.elements;
-        try {
-            await app
-                .auth()
-                .createUserWithEmailAndPassword(email.value, password.value);
-            history.push("/");
-        } catch (error) {
-            alert('Дор хаяж 6 оронтой нууц үг оруулна уу');
+        const { email, password, password1 } = event.target.elements;
+        if (password.value !== password1.value){
+            alert("Passwords don't match");
         }
+        else{
+            try {
+                await app
+                    .auth()
+                    .createUserWithEmailAndPassword(email.value, password.value);
+                history.push("/");
+            } catch (error) {
+                alert(error);
+            }
+        }
+        
     }, [history]);
 
     return (
@@ -118,7 +140,7 @@ const SignUp = ({ history }) => {
                                 variant="outlined"
                                 required
                                 fullWidth
-                                name="password"
+                                name="password1"
                                 label="Нууц үг давтан оруулах"
                                 type="password"
                                 id="password1"
