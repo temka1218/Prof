@@ -1,9 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import {FaBars, FaTimes, FaDirections} from 'react-icons/fa';
 import Button from './Button';
 import './Navbar.css';
 import {IconContext} from 'react-icons/lib';
+// import app from "./base.js";
+// import { AuthContext } from "./Auth.js";
+
+// const { currentUser } = useContext(AuthContext);
+
+// function garah(){
+//     if (currentUser) {
+//         <div>
+//             <h5>Garah</h5>
+//         </div>
+//     }
+// }
 
 function Navbar() {
     const[click, setClick] = useState(false)
@@ -25,6 +37,8 @@ function Navbar() {
         }, [])
 
     window.addEventListener('resize', showButton);
+
+
 
     return (
         <>
@@ -56,30 +70,25 @@ function Navbar() {
                     Hub
                 </Link>
             </li>
-            <li className='nav-btn'>
-                {button ? (
-                    <Link to='/signin' className='btn-link'>
-                        <Button buttonStyle='btn--outline'>Нэвтрэх</Button>
-                    </Link>
-                ):(
-                <Link to='/signin' className='btn-link'>
-                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Нэвтрэх</Button>
+            <li className='nav-item'>
+                <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
+                    Profile
                 </Link>
-            )}
             </li>
             <li className='nav-btn'>
                 {button ? (
-                    <Link to='/signout' className='btn-link'>
-                        <Button buttonStyle='btn--outline'>Гарах</Button>
+                    <Link to='/login' className='btn-link'>
+                        <Button buttonStyle='btn--outline'>Нэвтрэх</Button>
                     </Link>
                 ):(
-                <Link to='/signout' className='btn-link'>
-                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Гарах</Button>
+                <Link to='/login' className='btn-link'>
+                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Нэвтрэх</Button>
                 </Link>
             )}
             </li>
             </ul>
             </div> 
+            
         </div>
             </IconContext.Provider>
         </>
