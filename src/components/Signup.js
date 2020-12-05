@@ -36,7 +36,7 @@ export default function Signup() {
   return (
     <Container
       className="d-flex align-items-center justify-content-center lmao"
-      style={{ minHeight: "60vh" }}
+      style={{ minHeight: "84vh" }}
     >
       <div className="w-100" style={{ maxWidth: "400px" }}>
         <>

@@ -20,9 +20,9 @@ export default function ForgotPassword() {
       setError("");
       setLoading(true);
       await resetPassword(emailRef.current.value);
-      setMessage("Check your inbox for further instructions");
+      setMessage("Таны нууц үг сэргээх зааврыг И-Мэйлээр явууллаа.");
     } catch {
-      setError("Failed to reset password");
+      setError("Бүртгэлгүй байна.");
     }
 
     setLoading(false);
@@ -31,7 +31,7 @@ export default function ForgotPassword() {
   return (
     <Container
       className="d-flex align-items-center justify-content-center lmao"
-      style={{ minHeight: "50vh" }}
+      style={{ minHeight: "82vh" }}
     >
       <div className="w-100" style={{ maxWidth: "400px" }}>
         <>

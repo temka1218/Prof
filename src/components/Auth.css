@@ -1,3 +1,7 @@
+body{
+  background-color: #1c2237;
+  color: white;
+}
 .text-center {
   text-align: center !important;
 }
@@ -306,10 +310,11 @@ select.form-control:focus::-ms-value {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #1c2237;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #1c2237;
   border-radius: 0.25rem;
+  filter: drop-shadow(0px 0px 20px #4444dd);
 }
 
 .card > hr {
@@ -549,6 +554,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  text-align: center;
 }
 
 .alert-heading {

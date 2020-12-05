@@ -32,7 +32,7 @@ export default function Login() {
   return (
     <Container
       className="d-flex align-items-center justify-content-center lmao"
-      style={{ minHeight: "54vh" }}
+      style={{ minHeight: "82vh" }}
     >
       <div className="w-100" style={{ maxWidth: "400px" }}>
         <>
