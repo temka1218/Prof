@@ -61,7 +61,7 @@ function Navbar() {
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='Footer' className='nav-links' onClick={closeMobileMenu}>
                     Бидний тухай
                 </Link>
             </li>
