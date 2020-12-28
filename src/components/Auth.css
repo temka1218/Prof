@@ -1,5 +1,5 @@
-body{
-  background-color: #1c2237;
+body {
+  background: linear-gradient(90deg, #7149a1 0%, #495883 100%);
   color: white;
 }
 .text-center {
@@ -54,13 +54,23 @@ label {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-  font-size: 1rem;
+  background: linear-gradient(to right, #455b96 0%, #62419e 51%, #455b96 100%);
+  background-size: 200% auto;
+  font-size: 1.2rem;
   font-weight: 600;
-  transition:all 0.4s ease 0s;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: #FFF;
+  display: inline-block;
 }
+.btn-primary:hover{
+  background-position: right center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 0px 0 0;
+  transition: all 0.3s ease;
+}
+
 .btn-nemelt {
   text-decoration: none;
   display: inline-block;
@@ -74,7 +84,7 @@ label {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s;
-  transition:all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .btn-nemelt:hover {
   background-color: #005fc4;
@@ -96,7 +106,7 @@ label {
 }
 .mt-3 a,
 .mt-2 a {
-  color: #007bff;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -310,11 +320,12 @@ select.form-control:focus::-ms-value {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #1c2237;
+  /* background: linear-gradient(90deg, #0a0e19 0%, #28362f 100%); */
   background-clip: border-box;
-  border: 1px solid #1c2237;
-  border-radius: 0.25rem;
-  filter: drop-shadow(0px 0px 20px #4444dd);
+  /* background: linear-gradient(90deg, #5b4577 0%, #495883 100%); */
+  background: transparent;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0px 0px 20px #ffffff3b);
 }
 
 .card > hr {
@@ -649,9 +660,9 @@ select.form-control:focus::-ms-value {
 }
 
 .alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
+  color: #ffffff;
+  background: linear-gradient(90deg, #630000 0%, #b84f4f 100%);
+  border: none;
 }
 
 .alert-danger hr {

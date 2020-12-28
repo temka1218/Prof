@@ -49,7 +49,7 @@ function Navbar() {
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='Footer' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                     Бидний тухай
                 </Link>
             </li>
@@ -69,7 +69,7 @@ function Navbar() {
                         <Button buttonStyle='btn--outline'>Profile</Button>
                     </Link>
                 ):(
-                <Link to='/profile' className='btn-link'>
+                <Link to='/profile' className='btn-link' onClick={closeMobileMenu}>
                     <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Profile</Button>
                 </Link>
             )}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Card, Button, Alert } from "react-bootstrap";
+import { Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import "./Auth.css";
+import { Button } from './pages/Button';
 import { Container } from "react-bootstrap";
 
 export default function Profile() {
@@ -23,7 +24,7 @@ export default function Profile() {
 
   return (
     <Container
-      className="d-flex align-items-center justify-content-center lmao"
+      className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "60vh" }}
     >
       <div className="w-100" style={{ maxWidth: "500px" }}>
@@ -41,7 +42,7 @@ export default function Profile() {
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
-            <Button variant="link" onClick={handleLogout}>
+            <Button variant="link" buttonSize="wide" onClick={handleLogout}>
               Гарах
             </Button>
           </div>
