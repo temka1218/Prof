@@ -5,14 +5,14 @@ import { GiMuscleUp , GiBrain, GiPsychicWaves} from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
-export default function Choose() {
+export function Choose() {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
       <div className='choose__section'>
         <div className='choose__wrapper'>
           <h1 className='choose__heading'>Таны аль чадвар илүү хөгжсөн бэ?</h1>
           <div className='choose__container'>
-            <Link to='#' className='choose__container-card'>
+            <Link to='./Cont' className='choose__container-card'>
               <div className='choose__container-cardInfo'>
                 <div className='icon'>
                   <GiBrain />
@@ -57,3 +57,4 @@ export default function Choose() {
     </IconContext.Provider>
   );
 }
+export default Choose;
