@@ -12,8 +12,9 @@ import UpdateProfile from "./components/UpdateProfile";
 import Signup from "./components/Signup";
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "./contexts/AuthContext";
-import {Choose} from './components/Choose'
-
+import {Choose} from './components/Choose';
+import Contact from './Contact';
+import './Contact.css'
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Choose" component={Choose} />
+          <Route path='/Contact' component={Contact}/>
           <PrivateRoute path="/profile" component={Profile} />
           <PrivateRoute path="/update-profile" component={UpdateProfile} />
           <Route path="/signup" component={Signup} />

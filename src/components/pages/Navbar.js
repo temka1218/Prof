@@ -66,7 +66,7 @@ function Navbar() {
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
                     Hub
                 </Link>
             </li>
