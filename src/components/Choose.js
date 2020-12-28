@@ -12,7 +12,7 @@ function Choose() {
         <div className='choose__wrapper'>
           <h1 className='choose__heading'>Таны аль чадвар илүү хөгжсөн бэ?</h1>
           <div className='choose__container'>
-            <Link to='/sign-up' className='choose__container-card'>
+            <Link to='/signup' className='choose__container-card'>
               <div className='choose__container-cardInfo'>
                 <div className='icon'>
                   <GiBrain />
@@ -23,7 +23,7 @@ function Choose() {
                 </Button>
               </div>
             </Link>
-            <Link to='/sign-up' className='choose__container-card'>
+            <Link to='/signup' className='choose__container-card'>
               <div className='choose__container-cardInfo'>
                 <div className='icon'>
                   <GiPsychicWaves />
@@ -36,7 +36,7 @@ function Choose() {
                 </Button>
               </div>
             </Link>
-            <Link to='/sign-up' className='choose__container-card'>
+            <Link to='/signup' className='choose__container-card'>
               <div className='choose__container-cardInfo'>
                 <div className='icon'>
                   <GiMuscleUp />

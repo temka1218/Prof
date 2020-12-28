@@ -65,11 +65,11 @@ export default function UpdateProfile() {
                   />
                 </Form.Group>
                 <Form.Group id="password">
-                  <Form.Label>Нууц үг</Form.Label>
+                  <Form.Label>Шинэ нууц үг</Form.Label>
                   <Form.Control
                     type="password"
                     ref={passwordRef}
-                    placeholder="Leave blank to keep the same"
+                    placeholder=""
                   />
                 </Form.Group>
                 <Form.Group id="password-confirm">
@@ -77,7 +77,7 @@ export default function UpdateProfile() {
                   <Form.Control
                     type="password"
                     ref={passwordConfirmRef}
-                    placeholder="Leave blank to keep the same"
+                    placeholder=""
                   />
                 </Form.Group>
                 <Button disabled={loading} className="w-100" type="submit">

@@ -23,7 +23,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Бидний тухай</h2>
-            <Link to='/sign-up'>Бид 2020 оноос хойш Мандах их сургуулийн харьяа Мэдээлэл технологийн сургуульд суралцах явцдаа 
+            <Link to='/signup'>Бид 2020 оноос хойш Мандах их сургуулийн харьяа Мэдээлэл технологийн сургуульд суралцах явцдаа 
             Prof компаниа байгуулан өдийг хүртэл үйл ажиллагаагаа явуулж байна. </Link>
           </div>
           <div className='footer-link-items'>

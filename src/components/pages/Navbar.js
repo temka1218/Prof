@@ -4,18 +4,6 @@ import {FaBars, FaTimes, FaDirections} from 'react-icons/fa';
 import Button from './Button';
 import './Navbar.css';
 import {IconContext} from 'react-icons/lib';
-// import app from "./base.js";
-// import { AuthContext } from "./Auth.js";
-
-// const { currentUser } = useContext(AuthContext);
-
-// function garah(){
-//     if (currentUser) {
-//         <div>
-//             <h5>Garah</h5>
-//         </div>
-//     }
-// }
 
 function Navbar() {
     const[click, setClick] = useState(false)
@@ -70,19 +58,19 @@ function Navbar() {
                     Hub
                 </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
                 <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
                     Profile
                 </Link>
-            </li>
+            </li> */}
             <li className='nav-btn'>
                 {button ? (
-                    <Link to='/login' className='btn-link'>
-                        <Button buttonStyle='btn--outline'>Нэвтрэх</Button>
+                    <Link to='/profile' className='btn-link'>
+                        <Button buttonStyle='btn--outline'>Profile</Button>
                     </Link>
                 ):(
-                <Link to='/login' className='btn-link'>
-                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Нэвтрэх</Button>
+                <Link to='/profile' className='btn-link'>
+                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile'>Profile</Button>
                 </Link>
             )}
             </li>

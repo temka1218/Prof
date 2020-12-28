@@ -42,7 +42,7 @@ export default function Profile() {
           </Card>
           <div className="w-100 text-center mt-2">
             <Button variant="link" onClick={handleLogout}>
-              Гарах 
+              Гарах
             </Button>
           </div>
         </>
