@@ -5,7 +5,7 @@ import { GiMuscleUp , GiBrain, GiPsychicWaves} from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
-function Choose() {
+export function Choose() {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
       <div className='choose__section'>
@@ -18,9 +18,13 @@ function Choose() {
                   <GiBrain />
                 </div>
                 <h3>Тооцоолол болон Сэтгэн бодох чадвар</h3>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
+                <div>
+            
+             <Button buttonSize='btn--wide' >
                 Сонгох
                 </Button>
+         </div>
+              
               </div>
             </Link>
             <Link to='/signup' className='choose__container-card'>
@@ -42,7 +46,7 @@ function Choose() {
                   <GiMuscleUp />
                 </div>
                 <h3>Биеийн хүч</h3>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
+                <Button buttonSize='btn--wide'>
                 Сонгох
                 </Button>
               </div>

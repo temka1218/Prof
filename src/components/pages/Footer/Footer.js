@@ -9,7 +9,6 @@ import {
   FaTwitter,
 
 } from 'react-icons/fa';
-import { FaDirections } from 'react-icons/fa';
 
 function Footer() {
   return (
